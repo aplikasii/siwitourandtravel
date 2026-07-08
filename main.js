@@ -115,12 +115,18 @@ function setupSocialLinks() {
   const waLink = document.getElementById('whatsapp-link');
 
 if (contact.whatsapp) {
-  let phone = contact.whatsapp.replace(/\D/g, '');
+  let phone = contact.whatsapp.replace(/\D/g, '').trim();
 
-  // Ubah 08 menjadi 62
+  // Normalisasi nomor Indonesia
   if (phone.startsWith('0')) {
     phone = '62' + phone.substring(1);
+  } else if (phone.startsWith('62')) {
+    // sudah benar
+  } else if (phone.startsWith('8')) {
+    phone = '62' + phone;
   }
+
+  console.log("FINAL:", phone);
 
   waLink.href = `https://wa.me/${phone}`;
   waLink.style.display = 'flex';

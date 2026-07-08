@@ -1,0 +1,74 @@
+{
+    "shopInfo": {
+      "name": "Siwi Tour&Travel",
+      "tagline": "Yogyakarta",
+      "description": "Butuh perjalanan dinas yang praktis tanpa ribet? Atau cari homestay yang nyaman buat istirahat? Siwi Tour and Travel siap jadi solusi kamu! 🚗🏡 Kami menyediakan layanan transportasi perjalanan dinas lengkap dengan driver berpengalaman, plus pilihan homestay yang nyaman, bersih, dan strategis. Cocok untuk kebutuhan kantor, instansi, maupun perjalanan pribadi. Dengan pelayanan yang ramah, tepat waktu, dan harga yang bersahabat, kami pastikan perjalanan kamu jadi lebih tenang dan menyenangkan. Yuk, percayakan perjalananmu ke Siwi Tour and Travel! ✨ ",
+      "image": "foto/produk/logo.png",
+      "hero": {
+        "title": "Teman Perjalanan & Stay Nyaman Kamu",
+        "subtitle": "Siwi Tour and Travel menyediakan layanan perjalanan dinas dan homestay yang nyaman, praktis, dan terpercaya. Dengan driver berpengalaman serta penginapan yang bersih dan strategis, kami siap mendukung perjalanan Anda agar lebih lancar dan menyenangkan."
+      },
+      "contact": {
+        "phone": "085106441111",
+        "email": "tourtravelsiwi@gmail.com",
+        "address": "Jl. Tridharma GK IV/ 526 Barico, Yogyakarta",
+        "whatsapp": "085106441111",
+        "instagram": "-",
+        "youtube": "-",
+        "tiktok": "-"
+      }
+    },
+    "categories": [
+      {
+        "id": "unit",
+        "name": "Kendaraan"
+      },
+      {
+        "id": "rumah",
+        "name": "Homestay"
+      }
+      
+    ],
+    "products": [
+      {
+        "id": "u001",
+        "categoryId": "unit",
+        "name": "Toyota Kijang Innova Reborn",
+        "price": "Rp",
+        "description": "Toyota Innova Reborn adalah pilihan ideal untuk perjalanan dinas maupun keluarga. Dikenal dengan kabin yang luas, nyaman, dan suspensi yang empuk, mobil ini cocok untuk perjalanan jarak dekat hingga luar kota. Dilengkapi dengan AC dingin dan performa mesin yang tangguh, membuat perjalanan tetap nyaman dan aman.",
+        "image": "foto/reborn/innova_reborn.png",
+        "link": "https://docs.google.com/forms/d/e/1FAIpQLSeqqZGdPFwH_JH-yljRPpQnE5zBZogeeNfrg8lVAGGVaedbxA/viewform",
+        "badge": "Terlaris"
+      },
+      {
+        "id": "u002",
+        "categoryId": "unit",
+        "name": "Toyota Kijang Innova Zenix",
+        "price": "Rp",
+        "description": "Toyota Innova Zenix hadir dengan desain modern dan teknologi terbaru yang memberikan kenyamanan lebih dalam setiap perjalanan. Kabin lebih senyap, fitur lebih lengkap, serta efisiensi bahan bakar yang baik menjadikannya pilihan tepat untuk perjalanan dinas yang lebih premium dan berkelas.",
+        "image": "foto/zenix/innova_zenix.png",
+        "link": "https://docs.google.com/forms/d/e/1FAIpQLSeqqZGdPFwH_JH-yljRPpQnE5zBZogeeNfrg8lVAGGVaedbxA/viewform",
+        "badge": "Terlaris"
+      },
+      {
+        "id": "u003",
+        "categoryId": "unit",
+        "name": "Toyota Avanza Grand MT",
+        "price": "Rp",
+        "description": "Toyota Avanza Grand MT merupakan pilihan ekonomis yang tetap nyaman untuk berbagai kebutuhan perjalanan. Dengan kapasitas penumpang yang cukup, irit bahan bakar, dan mudah dikendarai, mobil ini cocok untuk perjalanan dinas harian maupun keperluan kelompok kecil.",
+        "image": "foto/avanza/avanza.png",
+        "link": "https://docs.google.com/forms/d/e/1FAIpQLSeqqZGdPFwH_JH-yljRPpQnE5zBZogeeNfrg8lVAGGVaedbxA/viewform",
+        "badge": ""
+      },
+      {
+        "id": "r002",
+        "categoryId": "rumah",
+        "name": "Homestay",
+        "price": "Rp",
+        "description": "Homestay yang kami sediakan menawarkan kenyamanan seperti di rumah sendiri dengan fasilitas bersih, aman, dan lokasi strategis. Cocok untuk istirahat setelah perjalanan dinas maupun liburan, memberikan suasana tenang dan harga yang terjangkau.",
+        "image": "foto/homestay/homestay.png",
+        "link": "https://docs.google.com/forms/d/e/1FAIpQLSeP0TgbjbOgufMdAEjisT0bEQnnrCxU0quYKPqVe3GaV-34rQ/viewform",
+        "badge": "Baru"
+      }
+    ]
+  }

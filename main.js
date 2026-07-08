@@ -112,14 +112,21 @@ function setupSocialLinks() {
       ttLink.style.display = 'none';
     }
   });
-  
   const waLink = document.getElementById('whatsapp-link');
-  if (contact.whatsapp) {
-    waLink.href = `https://wa.me/${contact.whatsapp.replace(/\D/g, '')}`;
-    waLink.style.display = 'flex';
-  } else {
-    waLink.style.display = 'none';
+
+if (contact.whatsapp) {
+  let phone = contact.whatsapp.replace(/\D/g, '');
+
+  // Ubah 08 menjadi 62
+  if (phone.startsWith('0')) {
+    phone = '62' + phone.substring(1);
   }
+
+  waLink.href = `https://wa.me/${phone}`;
+  waLink.style.display = 'flex';
+} else {
+  waLink.style.display = 'none';
+}
 }
 
 function renderCategories() {

@@ -517,21 +517,26 @@ function searchProducts(query) {
     productsContainer.appendChild(productCard);
   });
 }
-
 const music = document.getElementById('bg-music');
 const toggleBtn = document.getElementById('music-toggle');
 
 let isPlaying = false;
 
-// Coba autoplay (akan mute dulu)
-window.addEventListener('load', () => {
+// Wajib: trigger dari interaksi pertama user
+document.addEventListener('click', function initMusic() {
   music.volume = 0.5;
-  music.play().catch(() => {
-    console.log("Autoplay diblokir browser");
+  music.play().then(() => {
+    isPlaying = true;
+    toggleBtn.innerText = "🔊";
+  }).catch(err => {
+    console.log("Masih diblokir:", err);
   });
+
+  // hanya sekali jalan
+  document.removeEventListener('click', initMusic);
 });
 
-// Toggle tombol
+// tombol manual
 toggleBtn.addEventListener('click', () => {
   if (isPlaying) {
     music.pause();

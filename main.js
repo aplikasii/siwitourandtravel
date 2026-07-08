@@ -115,18 +115,12 @@ function setupSocialLinks() {
   const waLink = document.getElementById('whatsapp-link');
 
 if (contact.whatsapp) {
-  let phone = contact.whatsapp.replace(/\D/g, '').trim();
+  let phone = contact.whatsapp.replace(/\D/g, '');
 
-  // Normalisasi nomor Indonesia
+  // Ubah 08 menjadi 62
   if (phone.startsWith('0')) {
     phone = '62' + phone.substring(1);
-  } else if (phone.startsWith('62')) {
-    // sudah benar
-  } else if (phone.startsWith('8')) {
-    phone = '62' + phone;
   }
-
-  console.log("FINAL:", phone);
 
   waLink.href = `https://wa.me/${phone}`;
   waLink.style.display = 'flex';
@@ -523,3 +517,28 @@ function searchProducts(query) {
     productsContainer.appendChild(productCard);
   });
 }
+
+const music = document.getElementById('bg-music');
+const toggleBtn = document.getElementById('music-toggle');
+
+let isPlaying = false;
+
+// Coba autoplay (akan mute dulu)
+window.addEventListener('load', () => {
+  music.volume = 0.5;
+  music.play().catch(() => {
+    console.log("Autoplay diblokir browser");
+  });
+});
+
+// Toggle tombol
+toggleBtn.addEventListener('click', () => {
+  if (isPlaying) {
+    music.pause();
+    toggleBtn.innerText = "🔇";
+  } else {
+    music.play();
+    toggleBtn.innerText = "🔊";
+  }
+  isPlaying = !isPlaying;
+});
